@@ -312,6 +312,7 @@ section.next-concert {
     vertical-align: bottom;
     line-height: 1.4em;
     text-align: left;
+    max-width: 300px;
 }
 
 @media(max-width: 1073px) {
