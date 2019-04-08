@@ -393,8 +393,8 @@ section > hr {
     height: 160px;
     overflow: hidden;
     position: relative;
-    min-width: 100px;
     margin-bottom: 24px;
+
 }
 
 .team-member img {
@@ -610,6 +610,11 @@ section > hr {
     font-size: 1.125em;
 }
 
+.our-repertoire {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 .our-repertoire .music-list {
     line-height: 2em;
     margin-bottom: 120px;
@@ -636,6 +641,10 @@ section > hr {
 
 .music-list img {
     float: left;
+    max-width: 400px;
+    min-width: 320px;
+    width: 60%;
+    margin-bottom: 32px;
 }
 
 footer {
