@@ -1,0 +1,15 @@
+{
+	"name": "daniil-novikov-portfolio",
+	"description": "Portfolio of Daniil Novikov",
+	"author": "Daniil Novikov",
+	"version": "1.0.0",
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync": "2.24.7",
+		"htmlhint": "0.10.1"
+	},
+	"scripts": {
+		"start": "browser-sync start --server \"src\" --files \"src\" --open \"external\" --no-notify --no-ghost-mode",
+		"test": "./node_modules/.bin/htmlhint src/**/*.html"
+	}
+}
