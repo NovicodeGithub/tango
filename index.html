@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/main.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="plugins/responsive-menu.js"></script>
 </head>
 <body>
@@ -43,16 +42,16 @@
                         <a href="#">Главная</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#team">Команда</a>
+                        <a href="#team-anchor">Команда</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#concerts">Выступления</a>
+                        <a href="#concerts-anchor">Выступления</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#repertoire">Репертуар</a>
+                        <a href="#repertoire-anchor">Репертуар</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#contacts">Контакты</a>
+                        <a href="#contacts-anchor">Контакты</a>
                     </li>
                 </ul>
 
@@ -64,8 +63,11 @@
         <main class="content">
             <section class="intro-page">
                 <div class="background-violin-wrapper">
-                    <div class="header-wrapper">
-                        <h1>Tango <span class="new-line-text">Music Project</span></h1>
+                    <div class="shelf-wrapper">
+                        <h1>
+                            <b>Tango</b>
+                            <span class="new-line-text">Music Project</span>
+                        </h1>
                         <a href="https://youtu.be/dq59PneSxoU" class="primary-button">Узнать больше</a>
                     </div>
                     <div class="about-tango">
@@ -100,8 +102,8 @@
             </nav>
 
             <section class="next-concert">
-                <h2>Наш следующий концерт</h2>
                 <hr/>
+                <h2>Наш следующий концерт</h2>
                 <ul class="concert-info-list">
                     <li class="info-item">
                         <img src="assets/icons/map-icon.svg" alt="">
@@ -122,11 +124,9 @@
                 </ul>
             </section>
 
-            <section class="our-team">
+            <section class="our-team" id="team-anchor">
                 <h3>Наша команда</h3>
-                <hr/>
                 <span class="section-description">Коллектив был создан два года назад. Все музыканты - солисты оркестра Одесского Национального театра оперы и балета, многие из них имеет звание лауреата международных конкурсов</span>
-
 
                 <ul class="members-list">
                     <li class="team-member">
@@ -147,7 +147,7 @@
 
                     <li class="team-member">
                         <div class="member-image-wrapper">
-                            <img src="assets/images/members/1.jpg" alt="Участник команды">
+                            <img src="assets/images/members/2.png" alt="Участник команды">
                         </div>
                         <span class="member-name">Иван Аврятов</span>
                         <span class="member-staff">Cкрипка</span>
@@ -155,7 +155,7 @@
 
                     <li class="team-member">
                         <div class="member-image-wrapper">
-                            <img src="assets/images/members/1.jpg" alt="Участник команды">
+                            <img src="assets/images/members/3.png" alt="Участник команды">
                         </div>
                         <span class="member-name">Юрий Данчев</span>
                         <span class="member-staff">Альт</span>
@@ -195,9 +195,8 @@
                 </ul>
             </section>
 
-            <section class="our-concerts">
+            <section class="our-concerts" id="concerts-anchor">
                 <h3>Наши выступления</h3>
-                <hr/>
                 <span class="section-description">География выступлений коллектива очень разнообразна. Это престижные площадки нашего родного города Одессы, а также выступления за пределами Украины - Польша, Голландия, Швейцария!</span>
 
 
@@ -245,9 +244,8 @@
                 <a href="https://youtu.be/dq59PneSxoU">Узнать больше</a>
             </section>
 
-            <section class="our-repertoire">
+            <section class="our-repertoire" id="repertoire-anchor">
                 <h3>Наш репертуар</h3>
-                <hr/>
                 <span class="section-description">Change me География выступлений коллектива очень разнообразна. Это престижные площадки нашего родного города Одессы, а также выступления за пределами Украины - Польша, Голландия, Швейцария!</span>
 
                 <ul class="music-list">
@@ -297,10 +295,10 @@
         </main>
     </div>
 
-    <footer>
+    <footer class="page-footer" id="contacts-anchor">
         <h5>Остались вопросы?</h5>
         <span class="contact-us">Напишите нам!</span>
-        <form action="plugins/form.php" method="POST">
+        <form action="plugins/form.php" method="POST" class="contact-form">
             <label>
                 Имя
                 <input type="text" placeholder="Например, Даниил" name="name" required>
@@ -308,7 +306,7 @@
 
             <label>
                 Номер телефона
-                <input type="number" placeholder="0976665544" name="phone" required>
+                <input type="tel" placeholder="0976665544" name="phone" required>
             </label>
 
             <label>
@@ -328,25 +326,25 @@
             <img src="assets/icons/heart-icon.svg" alt="Дарите людям вдохновение!">
 
             <h6>Дарите людям вдохновение!</h6>
-            <a href="tel:096-866-73-32">Телефон: +38 (098) 91 79 551</a>
-            <span class="new-line-text">E-mail: info@umh.od.ua</span>
+            <a href="tel:+38(096)-866-73-32">Телефон: +38 (098) 91 79 551</a>
+            <a class="new-line-text" href="mailto:info@umh.od.ua">E-mail: info@umh.od.ua</a>
         </div>
 
         <ul class="icons-list">
             <li class="icon-item">
-                <a href="https://www.facebook.com/tangomusicproject/" target="_blank">
-                    <img src="assets/icons/facebook-icon.svg" alt="facebook link" />
+                <a href="https://www.facebook.com/tangomusicproject/" target="_blank" aria-label="facebook page link">
+                    <img src="assets/icons/facebook-icon.svg" alt="facebook link"/>
                 </a>
             </li>
 
             <li class="icon-item">
-                <a href="#">
+                <a href="#" aria-label="youtube page link">
                     <img src="assets/icons/youtube-icon.svg" alt="youtube link" target="_blank"/>
                 </a>
             </li>
 
             <li class="icon-item">
-                <a href="https://www.instagram.com/urbanmusichall/?hl=ru">
+                <a href="https://www.instagram.com/urbanmusichall/?hl=ru" aria-label="instagram page link">
                     <img src="assets/icons/instagram-icon.svg" alt="instagram link" target="_blank"/>
                 </a>
             </li>

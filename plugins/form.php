@@ -4,7 +4,7 @@
   $email = $_POST['email'];
   $comment = $_POST['comment'];
   $token = "855134610:AAEDa7mXX-VSRqhdot8CEnyJXnf14CM5ipE";
-  $chat_id = "537416557";
+  $chat_id = "-347430494";
   $arr = array(
     'Имя пользователя: ' => $name,
     'Телефон: ' => $phone,
